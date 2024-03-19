@@ -1,0 +1,1627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table class="table b-2-color  table-hover repo">
+        <thead>
+           <tr class="text-center b-2-color">
+              <th colspan="8" class="time-table-heading-font bg-blue text-white b-1-color ng-binding">Timetable for B.Tech (CSE) 2021-22 III Sem VI / Date : 11 Mar 2024 To 17 Mar 2024</th>
+           </tr>
+           <tr class="b-2-color">
+              <th class="b-1-color">Time Slots</th>
+              <!-- ngRepeat: days in Days_obj --><th class="success b-2-color th-color ng-binding ng-scope" ng-repeat="days in Days_obj">
+                 Monday
+                 11/03/24
+                 <!-- <span class="short">{{days.dayShort}}</span> -->
+              </th><!-- end ngRepeat: days in Days_obj --><th class="success b-2-color th-color ng-binding ng-scope" ng-repeat="days in Days_obj">
+                 Tuesday
+                 12/03/24
+                 <!-- <span class="short">{{days.dayShort}}</span> -->
+              </th><!-- end ngRepeat: days in Days_obj --><th class="success b-2-color th-color ng-binding ng-scope" ng-repeat="days in Days_obj">
+                 Wednesday
+                 13/03/24
+                 <!-- <span class="short">{{days.dayShort}}</span> -->
+              </th><!-- end ngRepeat: days in Days_obj --><th class="success b-2-color th-color ng-binding ng-scope" ng-repeat="days in Days_obj">
+                 Thursday
+                 14/03/24
+                 <!-- <span class="short">{{days.dayShort}}</span> -->
+              </th><!-- end ngRepeat: days in Days_obj --><th class="success b-2-color th-color ng-binding ng-scope" ng-repeat="days in Days_obj">
+                 Friday
+                 15/03/24
+                 <!-- <span class="short">{{days.dayShort}}</span> -->
+              </th><!-- end ngRepeat: days in Days_obj --><th class="success b-2-color th-color ng-binding ng-scope" ng-repeat="days in Days_obj">
+                 Saturday
+                 16/03/24
+                 <!-- <span class="short">{{days.dayShort}}</span> -->
+              </th><!-- end ngRepeat: days in Days_obj --><th class="success b-2-color th-color ng-binding ng-scope" ng-repeat="days in Days_obj">
+                 Sunday
+                 17/03/24
+                 <!-- <span class="short">{{days.dayShort}}</span> -->
+              </th><!-- end ngRepeat: days in Days_obj -->
+           </tr>
+        </thead>
+        <tbody class="text-center b-1-color">
+           <!-- ngRepeat: tme in Time --><tr ng-repeat="tme in Time" class="ng-scope">
+              <th class="danger b-2-color th-color ng-binding" style="color:#000;">08:20 - 09:10</th>
+              <!-- ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">O1UA603L (PR)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-SEC2_P</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC602C (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC602C-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC604C (PR)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-DL_SEC1_P1</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-443)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">O1UA603L (PR)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-SEC2_P</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj -->
+           </tr><!-- end ngRepeat: tme in Time --><tr ng-repeat="tme in Time" class="ng-scope">
+              <th class="danger b-2-color th-color ng-binding" style="color:#000;">09:10 - 10:00</th>
+              <!-- ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">O1UA603L (PR)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-SEC2_P</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC604C (PR)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-DL_SEC1_P1</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-443)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">O1UA603L (PR)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-SEC2_P</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj -->
+           </tr><!-- end ngRepeat: tme in Time --><tr ng-repeat="tme in Time" class="ng-scope">
+              <th class="danger b-2-color th-color ng-binding" style="color:#000;">10:05 - 10:55</th>
+              <!-- ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC601B (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC601B-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC601B (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC601B-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC601B (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC601B-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC601B (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC601B-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-514)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC602C (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC602C-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj -->
+           </tr><!-- end ngRepeat: tme in Time --><tr ng-repeat="tme in Time" class="ng-scope">
+              <th class="danger b-2-color th-color ng-binding" style="color:#000;">10:55 - 11:45</th>
+              <!-- ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC601B (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC601B-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC601B (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC601B-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC601B (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC601B-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC601B (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC601B-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-514)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC602C (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC602C-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj -->
+           </tr><!-- end ngRepeat: tme in Time --><tr ng-repeat="tme in Time" class="ng-scope">
+              <th class="danger b-2-color th-color ng-binding" style="color:#000;">11:50 - 12:40</th>
+              <!-- ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC601B (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC601B-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC601B (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC601B-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC601B (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC601B-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-312)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC601B (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC601B-Section-2</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-514)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj -->
+           </tr><!-- end ngRepeat: tme in Time --><tr ng-repeat="tme in Time" class="ng-scope">
+              <th class="danger b-2-color th-color ng-binding" style="color:#000;">12:40 - 13:30</th>
+              <!-- ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">E2UC515T (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-E2UC515T-Section-1</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-512)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj -->
+           </tr><!-- end ngRepeat: tme in Time --><tr ng-repeat="tme in Time" class="ng-scope">
+              <th class="danger b-2-color th-color ng-binding" style="color:#000;">13:30 - 14:20</th>
+              <!-- ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">E2UC515T (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-E2UC515T-Section-1</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-512)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC604C (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC604C-Section-1</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-413)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj -->
+           </tr><!-- end ngRepeat: tme in Time --><tr ng-repeat="tme in Time" class="ng-scope">
+              <th class="danger b-2-color th-color ng-binding" style="color:#000;">14:20 - 15:10</th>
+              <!-- ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC604C (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC604C-Section-1</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-413)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC604C (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-R1UC604C-Section-1</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-413)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">E2UC515T (PP)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-E2UC515T-Section-1</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-512)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj -->
+           </tr><!-- end ngRepeat: tme in Time --><tr ng-repeat="tme in Time" class="ng-scope">
+              <th class="danger b-2-color th-color ng-binding" style="color:#000;">15:15 - 16:05</th>
+              <!-- ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC602C (PR)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-SEC2_P1</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-205)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj -->
+           </tr><!-- end ngRepeat: tme in Time --><tr ng-repeat="tme in Time" class="ng-scope">
+              <th class="danger b-2-color th-color ng-binding" style="color:#000;">16:05 - 16:55</th>
+              <!-- ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] --><div ng-repeat="ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime]" class="ng-scope">
+                    <div ng-class="{'divAlt2':ntt.ChangeTTStatus==1,'divAlt':ntt.inactive==1,'divAlt1':ntt.slotType==4 }">     
+                                       
+                   
+                       <span class="ng-binding">B.Tech (CSE) 2021-22 III Sem VI- </span>
+                       <span class="ng-binding"></span>
+                       <span class="ng-binding">R1UC602C (PR)</span>
+                       <!-- ngIf: ntt.batch_name!='' --><span class="long ng-binding ng-scope" ng-if="ntt.batch_name!=''">-SEC2_P1</span><!-- end ngIf: ntt.batch_name!='' -->
+                       <span class="short ng-binding">(GU_C-205)</span>
+                       <span class="short ng-binding"></span>
+
+                       <!-- ngIf: $index==0 && (ntt.meeting || ntt.meetingbb) -->
+                       <!-- 
+                       <a ng-if="ntt.meeting" class="btn btn-sm btn-success" target="_blank" href="{{ntt.meeting}}">Online Class</a> -->
+                    </div>
+
+                 </div><!-- end ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj -->
+           </tr><!-- end ngRepeat: tme in Time --><tr ng-repeat="tme in Time" class="ng-scope">
+              <th class="danger b-2-color th-color ng-binding" style="color:#000;"> - </th>
+              <!-- ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj --><td class="b-1-color ng-scope" ng-repeat="days in Days_obj">
+              <!-- <span>{{days.dateFull}}hd</span> -->
+              <!-- ngRepeat: hdat in hDates --> 
+                      
+               
+                 <!-- ngRepeat: ntt in NEWTT[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+                            
+                 <!-- ngRepeat: altn in Alter_new[days.dayShort][tme.fromtime][tme.totime] -->
+
+
+
+
+              </td><!-- end ngRepeat: days in Days_obj -->
+           </tr><!-- end ngRepeat: tme in Time -->
+        </tbody>
+     </table>
+</body>
+</html>
